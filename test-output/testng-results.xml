@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-21T11:47:52Z" name="Default suite" finished-at="2024-09-21T11:48:01Z" duration-ms="9605">
+    <groups>
+    </groups>
+    <test started-at="2024-09-21T11:47:52Z" name="Default test" finished-at="2024-09-21T11:48:01Z" duration-ms="9605">
+      <class name="org.tcs.Sample">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:org.tcs.Sample@7efaad5a]" started-at="2024-09-21T11:47:52Z" name="beforeClass" finished-at="2024-09-21T11:47:59Z" duration-ms="7486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:org.tcs.Sample@7efaad5a]" started-at="2024-09-21T11:47:59Z" name="beforeMethod" finished-at="2024-09-21T11:47:59Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="login()[pri:0, instance:org.tcs.Sample@7efaad5a]" started-at="2024-09-21T11:47:59Z" name="login" finished-at="2024-09-21T11:48:01Z" duration-ms="1893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:org.tcs.Sample@7efaad5a]" started-at="2024-09-21T11:48:01Z" name="afterMethod" finished-at="2024-09-21T11:48:01Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:org.tcs.Sample@7efaad5a]" started-at="2024-09-21T11:48:01Z" name="afterClass" finished-at="2024-09-21T11:48:01Z" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- org.tcs.Sample -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
