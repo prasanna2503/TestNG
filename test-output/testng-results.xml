@@ -1,103 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="2" total="5" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-25T12:58:39Z" name="Suite" finished-at="2024-09-25T12:58:50Z" duration-ms="11697">
+  <suite started-at="2024-09-25T15:17:58Z" name="Suite" finished-at="2024-09-25T15:17:58Z" duration-ms="69">
     <groups>
+      <group name="reg">
+        <method signature="A.tc2()[pri:0, instance:org.tcs.A@3bd323e9]" name="tc2" class="org.tcs.A"/>
+        <method signature="A.tc5()[pri:0, instance:org.tcs.A@3bd323e9]" name="tc5" class="org.tcs.A"/>
+      </group> <!-- reg -->
+      <group name="sanity">
+        <method signature="A.tc3()[pri:0, instance:org.tcs.A@3bd323e9]" name="tc3" class="org.tcs.A"/>
+      </group> <!-- sanity -->
     </groups>
-    <test started-at="2024-09-25T12:58:39Z" name="Test" finished-at="2024-09-25T12:58:50Z" duration-ms="11697">
+    <test started-at="2024-09-25T15:17:58Z" name="Test" finished-at="2024-09-25T15:17:58Z" duration-ms="69">
       <class name="org.tcs.A">
-        <test-method signature="tc1()[pri:0, instance:org.tcs.A@291a7e3c]" started-at="2024-09-25T12:58:39Z" name="tc1" finished-at="2024-09-25T12:58:39Z" duration-ms="8" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc1 -->
-        <test-method signature="tc2()[pri:0, instance:org.tcs.A@291a7e3c]" started-at="2024-09-25T12:58:39Z" name="tc2" finished-at="2024-09-25T12:58:39Z" duration-ms="1" status="PASS">
+        <test-method signature="tc2()[pri:0, instance:org.tcs.A@3bd323e9]" started-at="2024-09-25T15:17:58Z" name="tc2" finished-at="2024-09-25T15:17:58Z" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc2 -->
-        <test-method signature="tc3()[pri:0, instance:org.tcs.A@291a7e3c]" started-at="2024-09-25T12:58:39Z" name="tc3" finished-at="2024-09-25T12:58:39Z" duration-ms="2" status="PASS">
+        <test-method signature="tc3()[pri:0, instance:org.tcs.A@3bd323e9]" started-at="2024-09-25T15:17:58Z" name="tc3" finished-at="2024-09-25T15:17:58Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc3 -->
-        <test-method signature="tc4()[pri:0, instance:org.tcs.A@291a7e3c]" started-at="2024-09-25T12:58:39Z" name="tc4" finished-at="2024-09-25T12:58:39Z" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc4 -->
-        <test-method signature="tc5()[pri:0, instance:org.tcs.A@291a7e3c]" started-at="2024-09-25T12:58:39Z" name="tc5" finished-at="2024-09-25T12:58:39Z" duration-ms="1" status="PASS">
+        <test-method signature="tc5()[pri:0, instance:org.tcs.A@3bd323e9]" started-at="2024-09-25T15:17:58Z" name="tc5" finished-at="2024-09-25T15:17:58Z" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc5 -->
       </class> <!-- org.tcs.A -->
-      <class name="org.tcs.Sample">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:org.tcs.Sample@ca30bc1]" started-at="2024-09-25T12:58:39Z" name="beforeClass" finished-at="2024-09-25T12:58:46Z" duration-ms="7443" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="login(java.lang.String, java.lang.String)[pri:0, instance:org.tcs.Sample@ca30bc1]" started-at="2024-09-25T12:58:46Z" name="login" data-provider="data" finished-at="2024-09-25T12:58:47Z" duration-ms="962" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[kprasanna2406@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Lovely@0612]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="login(java.lang.String, java.lang.String)[pri:0, instance:org.tcs.Sample@ca30bc1]" started-at="2024-09-25T12:58:47Z" name="login" data-provider="data" finished-at="2024-09-25T12:58:48Z" duration-ms="899" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[arun@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Lovely@0612]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="login(java.lang.String, java.lang.String)[pri:0, instance:org.tcs.Sample@ca30bc1]" started-at="2024-09-25T12:58:48Z" name="login" data-provider="data" finished-at="2024-09-25T12:58:49Z" duration-ms="1071" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[bala@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Lovely@0612]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="login(java.lang.String, java.lang.String)[pri:0, instance:org.tcs.Sample@ca30bc1]" started-at="2024-09-25T12:58:49Z" name="login" data-provider="data" finished-at="2024-09-25T12:58:50Z" duration-ms="1272" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[v@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Lovely@0612]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-      </class> <!-- org.tcs.Sample -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
