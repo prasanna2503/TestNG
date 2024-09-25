@@ -15,23 +15,23 @@ public class GroceryTask extends BaseClass {
 	
 	@BeforeClass
 	private void beforeClass() {
-		browserLaunch();
+		chromeBrowserLaunch();
 		maximizeWindow();
 		enterApplnUrl("https://www.omrbranch.com/");
 		implicitWait(60);
 	}
 	
-	@AfterClass
+	@AfterClass(enabled = false)
 	private void afterClass() {
-		///closeApplnWindow();
+		closeApplnWindow();
 	}
 	
-	@BeforeMethod
+	@BeforeMethod(enabled = false)
 	private void beforeMethod() {
 		System.out.println("Start Time:" +System.currentTimeMillis());
 	}
 	
-	@AfterMethod
+	@AfterMethod(enabled = false)
 	private void afterMethod() {
 		System.out.println("End Time:"+System.currentTimeMillis());
 	}
@@ -168,11 +168,12 @@ public class GroceryTask extends BaseClass {
 		Thread.sleep(2000);
 		WebElement moreDetails = findLocatorByXpath("(//a[text()='More Details'])[1]");
 		elementClick(moreDetails);
+		Thread.sleep(2000);	
 	}
 	
 	@Test
 	private void tc10() throws IOException, InterruptedException {
-		Thread.sleep(2000);		
+			
 		WebElement orderText = findLocatorByXpath("//p[text()='Order No: ']");
 		String orderNo = elementGetText(orderText);
 		createCellAndSetCellData("Sheet1", 1, 11, orderNo);

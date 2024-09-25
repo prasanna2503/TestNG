@@ -4,46 +4,37 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class Sample extends BaseClass {
 	
 	@BeforeClass
 	private void beforeClass() {
-		browserLaunch();
+		chromeBrowserLaunch();
 		maximizeWindow();
 		enterApplnUrl("https://adactinhotelapp.com/");
 		implicitWait();
 	}
 	
-	@AfterClass
+	
+	@AfterClass(enabled = false)
 	private void afterClass() {
 		closeApplnWindow();
 	}
 	
-	@BeforeMethod
-	private void beforeMethod() {
-		System.out.println("Start Time:" +System.currentTimeMillis());
-	}
 	
-	@AfterMethod
-	private void afterMethod() {
-		System.out.println("End Time:" +System.currentTimeMillis());
-	}
-	
-	@Test
-	private void login() throws IOException {
+	@Test(dataProvider = "data",dataProviderClass = Hello.class)
+	private void login(String username,String password) throws IOException {
 		WebElement uesrTxt = findLocatorById("username");
-		elementSendKeys(uesrTxt, getCellData("Sheet1", 1, 0));
+		elementSendKeys(uesrTxt, username);
 		
 		WebElement passTxt = findLocatorById("password");
-		elementSendKeys(passTxt, getCellData("Sheet1", 1, 1));
+		elementSendKeys(passTxt, password);
 		
 		WebElement btnLogin = findLocatorById("login");
 		elementClick(btnLogin);
-	}
+	}	 
 }
 

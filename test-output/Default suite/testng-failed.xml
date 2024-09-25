@@ -3,15 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.task.GroceryTask">
+      <class name="org.tcs.CrossBrowser">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="tc10"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="afterMethod"/>
+          <include name="cross"/>
         </methods>
-      </class> <!-- com.task.GroceryTask -->
+      </class> <!-- org.tcs.CrossBrowser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

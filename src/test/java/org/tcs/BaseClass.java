@@ -27,7 +27,9 @@ import org.openqa.selenium.OutputType;
 	import org.openqa.selenium.WebDriver;
 	import org.openqa.selenium.WebElement;
 	import org.openqa.selenium.chrome.ChromeDriver;
-	import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 	import org.openqa.selenium.support.ui.ExpectedConditions;
 	import org.openqa.selenium.support.ui.Select;
 	import org.openqa.selenium.support.ui.WebDriverWait;
@@ -204,8 +206,14 @@ import org.openqa.selenium.OutputType;
 
 		}
 
-		public void browserLaunch() {
+		public void chromeBrowserLaunch() {
 			driver = new ChromeDriver();
+		}
+		public void firefoxBrowserLaunch() {
+			driver = new FirefoxDriver();
+		}
+		public void edgeBrowserLaunch() {
+			driver = new EdgeDriver();
 		}
 
 		public void enterApplnUrl(String url) {
@@ -354,6 +362,7 @@ import org.openqa.selenium.OutputType;
 		public void insertDataAndEnter(WebElement  element, String data) {
 			element.sendKeys(data,Keys.ENTER);
 		}
+		
 
 }
 
